@@ -1,1 +1,1 @@
-# W6C1
+# Activities, exercises and self-education with advanced JavaScript concepts; ie AJAX calls and APIs.
