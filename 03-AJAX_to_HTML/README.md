@@ -17,4 +17,3 @@
 ### Bonus
 
 * Once you've completed the basic activity, refactor your solution to be more DRY by placing repetitive logic inside of functions to be called when needed.
-********************Ternary operator

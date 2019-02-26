@@ -40,16 +40,7 @@
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-      console.log(response.Title);
-      console.log(response.Actors);
-      console.log(response.Year);
-      var tbody = $('tbody');
-      var row = $('<tr>');
-      var titleTd = $('<td>').text(response.Title);
-      var actorsTd = $('<td>').text(response.Actors);
-      var yearTd = $('<td>').text(response.Year);
-      row.append(titleTd, yearTd, actorsTd);
-      tbody.append(row);
+
       // Create and save a reference to new empty table row
       // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
       // Append the td elements to the new table row
@@ -59,26 +50,6 @@
     // Repeat the above logic to add rows for two more movies of your choice
 
     // BONUS: Once complete, try to make your code as DRY as possible through the use of functions
-    var movie = "Nobody";
-    queryURL = "https://www.omdbapi.com/?s=" + movie + "&y=&plot=short&apikey=trilogy";
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(response) {
-      var array = response.Search;
-      for (var i = 0; i < response.length; i++)
-      console.log(response.Title);
-      console.log(response.Actors);
-      console.log(response.Year);
-      var tbody = $('tbody');
-      var row = $('<tr>');
-      var titleTd = $('<td>').text(array[i].Title);
-      var actorsTd = $('<td>').text(array[i].Actors);
-      var yearTd = $('<td>').text(array[i].Year);
-      row.append(titleTd, yearTd, actorsTd);
-      tbody.append(row);
-    
-
   </script>
 </body>
 
